@@ -1,0 +1,93 @@
+
+
+.orders{
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background: lightgray;
+}
+
+.container{
+    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 80%;
+    /* height: 20rem; */
+    background: white;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.header{
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.innerContainer{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.2);
+
+    display: flex;
+}
+
+.left{
+    width: 75%;
+    margin-top: 1rem;
+
+    display: flex;
+}
+
+.table{
+    width: 100%;
+    text-align: center;
+}
+
+.table__header{
+    background: black;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.table__content{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+.right{
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin-top: 1rem;
+
+}
+
+.right__link{
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.shipped{
+    background: green;
+    color: white;
+}
+
+.waiting{
+    background: orange;
+    color: white;
+}
+
+.cancelled{
+    background: red;
+    color: white;
+}

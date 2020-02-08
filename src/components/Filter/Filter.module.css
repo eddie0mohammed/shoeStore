@@ -1,0 +1,79 @@
+.filter{
+
+    margin-top: 10rem;
+    width: 100%;
+    /* background: yellow; */
+    padding: 1rem;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    margin: 2rem 0;
+}
+
+.label{
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sign{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.choiceContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.choice{
+    margin: 0.5rem 0;
+    background: transparent;
+    padding: 0.75rem 1rem;
+    width: 48%;
+    text-align: center;
+    border: 1px solid white;
+    color: grey;
+    font-weight: 600;
+
+}
+
+.priceInput{
+    margin: 0.5rem 0;
+    background: white;
+    padding: 0.75rem 1rem;
+    width: 48%;
+    border: 1px solid white;
+    color: grey;
+    font-weight: 600;
+}
+
+.priceInput:focus{
+    outline: none;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+    font-weight: 600;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}

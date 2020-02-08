@@ -1,0 +1,121 @@
+
+
+.singleProduct{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    background: lightgray;
+}
+
+.container{
+    
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    /* background: pink; */
+    padding-top: 8rem;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    /* background: lightblue; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.background{
+    width: 70%;
+    height: 30%;
+    background: white;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+.img{
+
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+
+    background-image: url('../../img/yeezy.png');
+    background-size: cover;
+    background-position: center;
+    width: 25rem;
+    height: 20rem;
+    
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    background: white;
+
+    padding: 1rem;
+
+}
+
+.brand{
+    text-transform: uppercase;
+    color: red;
+    font-weight: 600;
+}
+
+.header{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.desc{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 3rem 0;
+
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.label{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sign{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.choiceContainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+}
+
+.choice{
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    
+}
