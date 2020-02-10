@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from './Login.module.css';
 
-import Header from '../../components/Header/Header';
+// import Header from '../../components/Header/Header';
 
 import {Link} from 'react-router-dom';
 
@@ -15,7 +15,7 @@ class Login extends React.Component{
         return (
             <div className={styles.login}>
 
-                <Header />
+                {/* <Header /> */}
 
                 <div className={styles.container}>
 

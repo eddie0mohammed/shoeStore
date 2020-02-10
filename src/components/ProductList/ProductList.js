@@ -3,16 +3,24 @@ import React from 'react';
 
 import styles from './ProductList.module.css';
 
+import {withRouter} from 'react-router-dom';
+
 
 class ProductList extends React.Component{
 
+
+
+    handleClick = () => {
+        this.props.history.push('/product');
+        // console.log(this.props);
+    }
 
     render(){
 
         return (
             <div className={styles.productList}>
 
-                <div className={styles.itemContainer}>
+                <div className={styles.itemContainer} onClick={this.handleClick}>
 
                     <div className={styles.background}></div>
 
@@ -89,4 +97,4 @@ class ProductList extends React.Component{
     }
 }
 
-export default ProductList;
+export default withRouter(ProductList);

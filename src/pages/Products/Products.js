@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Products.module.css';
 
 
-import Header from '../../components/Header/Header';
+// import Header from '../../components/Header/Header';
 import Filter from '../../components/Filter/Filter';
 import ProductList from '../../components/ProductList/ProductList';
 
@@ -17,7 +17,7 @@ class Products extends React.Component{
         return (
             <div className={styles.products}>
 
-                <Header />
+                {/* <Header /> */}
 
                 <div className={styles.left}>
 

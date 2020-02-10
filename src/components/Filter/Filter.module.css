@@ -12,6 +12,7 @@
     padding: 1rem;
     background: white;
     margin: 2rem 0;
+    cursor: pointer;
 }
 
 .label{
@@ -43,7 +44,12 @@
     border: 1px solid white;
     color: grey;
     font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
+}
+.choice:hover{
+    background: white;
 }
 
 .priceInput{

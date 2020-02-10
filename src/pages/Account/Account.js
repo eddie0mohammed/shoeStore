@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Account.module.css';
 
 
-import Header from '../../components/Header/Header';
+// import Header from '../../components/Header/Header';
 
 import {Link} from 'react-router-dom';
 
@@ -16,7 +16,7 @@ class Account extends React.Component{
         return (
             <div className={styles.account}>
 
-                <Header />
+                {/* <Header /> */}
 
                 <div className={styles.container}>
 

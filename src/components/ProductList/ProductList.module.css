@@ -18,6 +18,16 @@
     
 }
 
+.itemContainer:hover .img{
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+.itemContainer:hover .textBox{
+    /* transform: translate(-50%, 0) scale(1.1); */
+    color: darkred;
+}
+
 .background{
     
     position : absolute;

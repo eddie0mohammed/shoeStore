@@ -23,8 +23,9 @@ class Header extends React.Component{
                     
                     <Link to='/login' className={styles.header__link}>Login</Link>
                     <Link to='/register' className={styles.header__link}>Register</Link>
+                    <Link to='/account' className={styles.header__link}>Settings</Link>
 
-                    <p className={`${styles.header__link} ${styles.cart}`}>Cart <span className={styles.number}>4</span></p>
+                    <div className={`${styles.header__link} ${styles.cart}`} onClick={this.props.toggle}>Cart <span className={styles.number}>4</span></div>
                 </div>
             </div>
         )

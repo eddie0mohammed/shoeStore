@@ -90,6 +90,8 @@
 
     border: 1px solid black;
     padding: 1rem;
+
+    cursor: pointer;
 }
 
 .label{
@@ -117,5 +119,12 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: rgba(0,0,0,0.5);
+    transition: all 0.2s ease-in-out;
+
     
+}
+
+.choice:hover{
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
 }

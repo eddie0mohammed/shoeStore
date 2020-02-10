@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from './Register.module.css';
 
-import Header from '../../components/Header/Header';
+// import Header from '../../components/Header/Header';
 
 import {Link} from 'react-router-dom';
 
@@ -16,7 +16,7 @@ class Register extends React.Component{
         return (
             <div className={styles.register}>
 
-                <Header />
+                {/* <Header /> */}
 
                 <div className={styles.container}>
 

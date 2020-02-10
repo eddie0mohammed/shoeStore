@@ -14,10 +14,26 @@ import Account from './pages/Account/Account';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
 import Orders from './pages/Orders/Orders';
 
+import Popup from './components/Popup/Popup';
+import Header from './components/Header/Header';
+
+import Backdrop from './UI/Backdrop/Backdrop';
+
 
 
 class App  extends React.Component {
 
+
+  state = {
+    showPopup: false,
+  }
+
+
+  togglePopup = () => {
+    this.setState({
+      showPopup: !this.state.showPopup
+    })
+  }
 
   render(){
 
@@ -25,6 +41,8 @@ class App  extends React.Component {
     return (
       <div className="App">
 
+
+        <Header toggle={this.togglePopup}/>
 
         <Switch >
 
@@ -42,7 +60,11 @@ class App  extends React.Component {
           <Route path="/orders" exact component={Orders} />
  
         </Switch>
+
+
+        <Popup show={this.state.showPopup}/>
         
+        <Backdrop show={this.state.showPopup} toggle={this.togglePopup}/>
 
       </div>
     );

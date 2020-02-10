@@ -6,6 +6,38 @@ import styles from './Filter.module.css';
 
 class Filter extends React.Component{
 
+
+    state = {
+        gender: false,
+        brand: false,
+        price: false,
+        size: false
+    }
+
+    handleGenderClick = () => {
+        this.setState({
+            gender: !this.state.gender
+        })
+    }
+
+    handleBrandClick = () => {
+        this.setState({
+            brand: !this.state.brand
+        })
+    }
+
+    handlePriceClick = () => {
+        this.setState({
+            price: !this.state.price
+        })
+    }
+
+    handleSizeClick = () => {
+        this.setState({
+            size: !this.state.size
+        })
+    }
+
     render(){
 
         return (
@@ -13,23 +45,23 @@ class Filter extends React.Component{
 
 
                 {/* gender */}
-                <div className={styles.item}>
+                <div className={`${styles.item}`} onClick={this.handleGenderClick}>
                     <p className={styles.label}>Gender</p>
-                    <p className={styles.sign}>+</p>
+                    <p className={styles.sign}>{this.state.gender ? '-' : '+'}</p>
                 </div>
 
-                <div className={styles.choiceContainer} style={{display: 'none'}}>
+                <div className={styles.choiceContainer} style={{display: `${this.state.gender ? 'flex' : 'none'}`}}>
                     <p className={styles.choice}>Male</p>
                     <p className={styles.choice}>Female</p>
                 </div>
 
                 {/* brand */}
-                <div className={styles.item}>
+                <div className={styles.item} onClick={this.handleBrandClick}>
                     <p className={styles.label}>Brand</p>
-                    <p className={styles.sign}>+</p>
+                    <p className={styles.sign}>{this.state.brand ? '-' : '+'}</p>
                 </div>
 
-                <div className={styles.choiceContainer} style={{display: 'none'}}>
+                <div className={styles.choiceContainer} style={{display: `${this.state.brand ? 'flex' : 'none'}`}}>
                     <p className={styles.choice}>Adidas</p>
                     <p className={styles.choice}>Nike</p>
                     <p className={styles.choice}>Gucci</p>
@@ -39,12 +71,12 @@ class Filter extends React.Component{
                 </div>
 
                 {/* PRICE */}
-                <div className={styles.item}>
+                <div className={styles.item} onClick={this.handlePriceClick}>
                     <p className={styles.label}>Price</p>
-                    <p className={styles.sign}>+</p>
+                    <p className={styles.sign}>{this.state.price ? '-' : '+'}</p>
                 </div>
 
-                <div className={styles.choiceContainer} style={{display: 'none'}}>
+                <div className={styles.choiceContainer} style={{display: `${this.state.price ? 'flex' : 'none'}`}}>
 
                     <input type="number" name="min" className={styles.priceInput} placeholder="Min"/>
                     <input type="number" name="man" className={styles.priceInput} placeholder="Max"/>
@@ -52,12 +84,12 @@ class Filter extends React.Component{
                 </div>
 
                 {/* SIZE */}
-                <div className={styles.item}>
+                <div className={styles.item} onClick={this.handleSizeClick}>
                     <p className={styles.label}>Size</p>
-                    <p className={styles.sign}>+</p>
+                    <p className={styles.sign}>{this.state.size ? '-' : '+'}</p>
                 </div>
 
-                <div className={styles.choiceContainer} style={{display: 'none'}}>
+                <div className={styles.choiceContainer} style={{display: `${this.state.size ? 'flex' : 'none'}`}}>
                     <p className={styles.choice}>7</p>
                     <p className={styles.choice}>7.5</p>
                     <p className={styles.choice}>8</p>

@@ -42,8 +42,16 @@
     color: rgb(90, 90, 90);
 
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
 }
+
+.header__link:last-child:hover{
+    background: black;
+
+}
+
 
 .cart{
     padding: 0.75rem 1.25rem;

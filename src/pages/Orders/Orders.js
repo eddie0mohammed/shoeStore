@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Orders.module.css';
 
 
-import Header from '../../components/Header/Header';
+// import Header from '../../components/Header/Header';
 
 import {Link} from 'react-router-dom';
 
@@ -17,7 +17,7 @@ class Orders extends React.Component{
         return (
             <div className={styles.orders}>
 
-                <Header />
+                {/* <Header /> */}
 
                 <div className={styles.container}>
 
