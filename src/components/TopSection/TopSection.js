@@ -3,9 +3,16 @@ import React from 'react';
 
 import styles from './TopSection.module.css';
 
+import {withRouter} from 'react-router-dom';
+
 
 class TopSection extends React.Component{
 
+
+
+    handleClick = () => {
+        this.props.history.push('/products');
+    }
 
     render(){
 
@@ -14,7 +21,7 @@ class TopSection extends React.Component{
 
                 <div className={styles.circle}>
                     
-                    <div className={styles.img}></div>
+                    <div className={styles.img} onClick={this.handleClick}></div>
 
                 </div>
 
@@ -29,4 +36,4 @@ class TopSection extends React.Component{
     }
 }
 
-export default TopSection;
+export default withRouter(TopSection);

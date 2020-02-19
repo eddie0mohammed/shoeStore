@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './Home.module.css';
 
-// import Header from '../../components/Header/Header';
 import TopSection from '../../components/TopSection/TopSection';
 
 
@@ -16,7 +15,6 @@ class Home extends React.Component{
             <div className={styles.home}>
 
 
-                {/* <Header /> */}
 
                 <TopSection />
 

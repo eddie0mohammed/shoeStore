@@ -13,3 +13,14 @@
 }
 
 
+
+.main{
+    position: relative;
+    overflow: hidden;
+}
+
+.selected{
+    background: black !important;
+    color: white !important;
+    border: 1px solid black !important;
+}

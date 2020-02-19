@@ -27,6 +27,12 @@
 
 }
 
+@media (max-width: 767px){
+    .container{
+        padding: 5rem 2rem;
+    }
+}
+
 .header{
     text-align: center;
     text-transform: uppercase;

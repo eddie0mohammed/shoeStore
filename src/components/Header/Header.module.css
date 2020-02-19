@@ -33,6 +33,12 @@
     align-items: center;
 }
 
+@media (max-width: 600px){
+    .header__links{
+        display: none;
+    }
+}
+
 .header__link{
     padding-left: 2rem;
     font-size: 1rem;
@@ -73,4 +79,28 @@
     background: black;
     border-radius: 50%;
     
+}
+
+
+/* hamburger */
+
+.hamburger{
+    border: 1px solid black;
+    color: black;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor:pointer;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 13;
+
+    display: none;
+}
+
+@media (max-width: 600px){
+    .hamburger{
+        display: block;
+    }
 }

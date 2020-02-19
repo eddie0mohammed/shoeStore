@@ -1,0 +1,153 @@
+
+.checkout{
+    position: relative;
+
+    background: lightgray;
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 10rem;
+}
+
+
+.checkout__container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+    padding: 1rem;
+
+}
+
+.header{
+    text-align: center;
+    font-size:3rem;
+    padding: 2rem 0;
+}
+
+.border{
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.2);
+    font-size: 2px;
+
+}
+
+.inner__container{
+    display: flex;
+}
+
+.left{
+    width: 60%;
+}
+
+.shipping__container{
+    margin-top: 2rem;
+}
+
+.heading{
+    font-size: 1.8rem;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.col{
+    width: 50%;
+}
+
+.label{
+    font-size: 1.3rem;
+    padding: 0.75rem 0;
+}
+
+.input{
+    width: 95%;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.biling__container{
+    margin-top: 5rem;
+}
+
+.right{ 
+    width: 40%;
+    padding: 0 1rem;
+    /* background:pink; */
+    /* margin-left: 2rem; */
+    
+}
+
+.order__container{
+    margin-top: 2rem;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 2rem 1rem;
+    
+}
+
+.order__heading{
+    font-size:1.8rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.order__label{
+    /* margin-left: 3rem; */
+
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    /* text-align: right; */
+    padding-right: 3rem;
+}
+
+.checkout__btn{
+    /* width:80%; */
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border:none;
+    background: rgb(0, 151, 252);
+    color: white;
+
+}
+
+
+.itemContainer{
+    margin: 1rem 0;
+    width: 100%;
+
+}
+
+.details{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+    padding: 0.5rem 0;
+}
+
+.border{
+    width: 80%;
+    margin: 0.5rem auto;
+    font-size: 1px;
+    background:gray;
+
+}

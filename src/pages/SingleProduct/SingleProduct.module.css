@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
 
-    background-image: url('../../img/yeezy.png');
+    /* background-image: url('../../img/yeezy.png'); */
     background-size: cover;
     background-position: center;
     width: 25rem;
@@ -61,6 +61,7 @@
     width: 50%;
     height: 100%;
     background: white;
+    overflow: scroll;
 
     padding: 1rem;
 
@@ -127,4 +128,27 @@
 .choice:hover{
     background: rgba(0,0,0,0.1);
     cursor: pointer;
+}
+
+.addBtn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+
+.addBtn:hover{
+    background: black;
+    color: white;
+}
+
+.addBtn:focus{
+    outline: none;
 }

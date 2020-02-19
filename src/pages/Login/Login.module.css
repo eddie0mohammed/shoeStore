@@ -20,6 +20,18 @@
     padding: 2rem 0 4rem;
 }
 
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px){
+    .container{
+        max-width: 60%;
+    }
+}
+
 .header{
     text-align: center;
     font-size: 3rem;
@@ -62,6 +74,7 @@
     background: rgb(0, 81, 255);
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .right{
@@ -94,9 +107,11 @@
     border-radius: 3px;
     border:none;
 
-    background: grey;
+    background: blue;
 
     color: white;
+    cursor: pointer;
+    
 }
 
 

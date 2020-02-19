@@ -52,11 +52,16 @@
     background: white;
 }
 
+.choice:focus{
+    outline: none;
+}
+
+
 .priceInput{
     margin: 0.5rem 0;
     background: white;
     padding: 0.75rem 1rem;
-    width: 48%;
+    width: 100%;
     border: 1px solid white;
     color: grey;
     font-weight: 600;
@@ -66,6 +71,13 @@
     outline: none;
 }
 
+.priceLabel__container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
 
 .btn{
     margin-top: 1rem;
@@ -73,6 +85,7 @@
     padding: 1rem;
     border-radius: 3px;
     font-weight: 600;
+    cursor:pointer;
     
 }
 
@@ -83,3 +96,25 @@
 .btn:active{
     transform: translateY(2px);
 }
+
+
+.filterBtn{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .filterBtn{
+        display: flex;
+    }
+}
+
+.filter__container{
+
+}
+
+@media (min-width: 768px){
+    .filter__container{
+        display: block !important;
+    }
+}
+

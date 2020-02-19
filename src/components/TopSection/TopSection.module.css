@@ -9,8 +9,8 @@
 }
 
 .circle{
-    width: 60%;
-    height: 50%;
+    width: 50rem;
+    height: 50rem;
     background: white;
 
     position: absolute;
@@ -21,6 +21,35 @@
     -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 767px){
+    .circle{
+        width: 37rem;
+        height: 37rem;
+    }
+}
+
+@media (max-width: 600px){
+    .circle{
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+
+@media (max-width: 500px){
+    .circle{
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .circle{
+        width: 70rem;
+        height: 70rem;
+    }
 }
 
 .img{
@@ -37,6 +66,45 @@
     transform: translate(-50%, -50%) scale(1.5);
     z-index: 1000;
 
+    transition: all 0.2s ease-in-out;
+
+}
+
+@media (max-width: 767px){
+    .img{
+        height: 23rem;
+    }
+}
+
+@media (max-width: 600px){
+    .img{
+        height: 22rem
+    }
+}
+
+@media (max-width: 500px){
+    .img{
+        height: 20rem
+    }
+}
+
+@media (max-width: 500px){
+    .img{
+        height: 18rem
+    }
+}
+
+@media (min-width: 1200px){
+    .img{
+        height: 40rem;
+    }
+}
+
+
+
+.img:hover{
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.6);
 }
 
 .textContainer{
@@ -45,15 +113,56 @@
     left: 5rem;
 }
 
+@media (min-width: 1200px){
+    .textContainer{
+        left: 12rem;
+        bottom: 15rem;
+    }
+}
+
+@media (max-width: 500px){
+    .textContainer{
+        /* bottom: 2rem; */
+    }
+}
+
 .name{
     font-size: 5rem;
     letter-spacing: 0.3rem;
     margin-bottom: 1rem;
-    color: white;
+    color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px){
+    .name{
+        font-size: 3.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 500px){
+    .name{
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0rem;
+    }
 }
 
 .model{
     font-size: 8rem;
     font-weight: 600;
-    color: white;
+    color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px){
+    .model{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .model{
+        font-size: 4rem;
+    }
 }

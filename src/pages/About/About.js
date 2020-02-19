@@ -4,8 +4,6 @@ import React from 'react';
 
 import styles from './About.module.css';
 
-// import Header from '../../components/Header/Header';
-
 class About extends React.Component{
 
 
@@ -14,8 +12,6 @@ class About extends React.Component{
         return (
             <div className={styles.about}>
 
-
-                {/* <Header /> */}
 
                 <div className={styles.container}>
                     
